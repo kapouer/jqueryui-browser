@@ -1,0 +1,24 @@
+{
+  "author": "Paul Bakaus",
+  "name": "jqueryui-browser",
+  "version": "1.8.18-1",
+  "homepage": "http://jqueryui.com/",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://jqueryui.com/latest/MIT-LICENSE.txt"
+    }
+  ],
+  "repository": {
+    "type":"git",
+    "url": "http://github.com/kapouer/jqueryui-browser.git"
+  },
+  "directories": {
+    "javascripts": "./ui",
+    "stylesheets": "./themes",
+    "doc": "./docs"
+  },
+  "dependencies": {
+    "jquery-browser": ">=1.7.1-2"
+  }
+}
