@@ -1,1 +1,1 @@
-// placeholder, needed to be able to require.resolve('jqueryui-browser')
+// placeholder, so require.resolve('xxx-browser') gives root path.
