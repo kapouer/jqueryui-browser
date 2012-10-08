@@ -22,7 +22,7 @@
 <p>If you use a different element for the header, specify the header-option with an appropriate selector, eg. header: 'a.header'. The content element must be always next to its header.</p>
 <p>If you have links inside the accordion content and use a-elements as headers, add a class to them and use that as the header, eg. header: 'a.header'.</p>
 <p>Use activate(Number) to change the active content programmatically.</p>
-<div class="editsection" style="float:right;margin-left:5px;">[<a href="http://docs.jquery.com/action/edit/UI/API/1.8/Accordion?section=1" title="Edit section: NOTE: If you want multiple sections open at once, don't use an accordion">edit</a>]</div><a name="NOTE:_If_you_want_multiple_sections_open_at_once.2C_don.27t_use_an_accordion"></a><h4>NOTE: If you want multiple sections open at once, don't use an accordion</h4>
+<h4> <span class="mw-headline" id="NOTE:_If_you_want_multiple_sections_open_at_once.2C_don.27t_use_an_accordion">NOTE: If you want multiple sections open at once, don't use an accordion</span></h4>
 <p>An accordion doesn't allow more than one content panel to be open at the same time, and it takes a lot of effort to do that. If you are looking for a widget that allows more than one content panel to be open, don't use this. Usually it can be written with a few lines of jQuery instead, something like this:</p>
 <pre>jQuery(document).ready(function(){
 	$('.accordion .head').click(function() {
@@ -476,7 +476,7 @@ $( ".selector" ).accordion( "option", "fillSpace", true );</code></pre>
         <dd class="option-type">Selector, jQuery</dd>
       
       <dt class="option-default-label">Default:</dt>
-        <dd class="option-default">"&gt; li &gt;&nbsp;:first-child,&gt;&nbsp;:not(li):even"</dd>
+        <dd class="option-default">"&gt; li &gt;&#160;:first-child,&gt;&#160;:not(li):even"</dd>
       
     </dl>
   </div>
@@ -523,7 +523,7 @@ $( ".selector" ).accordion( "option", "header", 'h3' );</code></pre>
     </dl>
   </div>
   <div class="option-description">
-    <p>Icons to use for headers. Icons may be specified for 'header' and 'headerSelected', and we recommend using the icons native to the jQuery UI CSS Framework manipulated by <a href="http://www.themeroller.com" class="external text" title="http://www.themeroller.com">jQuery UI ThemeRoller</a>. Set to false to have no icons displayed.</p>
+    <p>Icons to use for headers. Icons may be specified for 'header' and 'headerSelected', and we recommend using the icons native to the jQuery UI CSS Framework manipulated by <a rel=nofollow class="external text" href="http://www.themeroller.com">jQuery UI ThemeRoller</a>. Set to false to have no icons displayed.</p>
   </div>
   <div class="option-examples">
     <h4>Code examples</h4>
@@ -963,27 +963,27 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
     
   <h3>Sample markup with jQuery UI CSS Framework classes</h3>
   &lt;div class="<strong>ui-accordion</strong> ui-widget ui-helper-reset"&gt;<br />
-&nbsp;&nbsp;&lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-active ui-corner-top"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ui-icon ui-icon-triangle-1-s"/&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Section 1&lt;/a&gt;<br />
-&nbsp;&nbsp;&lt;/h3&gt;<br />
-&nbsp;&nbsp;&lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom <strong>ui-accordion-content-active</strong>"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Section 1 content<br />
-&nbsp;&nbsp;&lt;/div&gt;<br />
-&nbsp;&nbsp;&lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-default ui-corner-all"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ui-icon ui-icon-triangle-1-e"/&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Section 2&lt;/a&gt;<br />
-&nbsp;&nbsp;&lt;/h3&gt;<br />
-&nbsp;&nbsp;&lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Section 2 content<br />
-&nbsp;&nbsp;&lt;/div&gt;<br />
-&nbsp;&nbsp;&lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-default ui-corner-all"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ui-icon ui-icon-triangle-1-e"/&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Section 3&lt;/a&gt;<br />
-&nbsp;&nbsp;&lt;/h3&gt;<br />
-&nbsp;&nbsp;&lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Section 3 content<br />
-&nbsp;&nbsp;&lt;/div&gt;<br />
+&#160;&#160;&lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-active ui-corner-top"&gt;<br />
+&#160;&#160;&#160;&#160;&lt;span class="ui-icon ui-icon-triangle-1-s"/&gt;<br />
+&#160;&#160;&#160;&#160;&lt;a href="#"&gt;Section 1&lt;/a&gt;<br />
+&#160;&#160;&lt;/h3&gt;<br />
+&#160;&#160;&lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom <strong>ui-accordion-content-active</strong>"&gt;<br />
+&#160;&#160;&#160;&#160;Section 1 content<br />
+&#160;&#160;&lt;/div&gt;<br />
+&#160;&#160;&lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-default ui-corner-all"&gt;<br />
+&#160;&#160;&#160;&#160;&lt;span class="ui-icon ui-icon-triangle-1-e"/&gt;<br />
+&#160;&#160;&#160;&#160;&lt;a href="#"&gt;Section 2&lt;/a&gt;<br />
+&#160;&#160;&lt;/h3&gt;<br />
+&#160;&#160;&lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom"&gt;<br />
+&#160;&#160;&#160;&#160;Section 2 content<br />
+&#160;&#160;&lt;/div&gt;<br />
+&#160;&#160;&lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-default ui-corner-all"&gt;<br />
+&#160;&#160;&#160;&#160;&lt;span class="ui-icon ui-icon-triangle-1-e"/&gt;<br />
+&#160;&#160;&#160;&#160;&lt;a href="#"&gt;Section 3&lt;/a&gt;<br />
+&#160;&#160;&lt;/h3&gt;<br />
+&#160;&#160;&lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom"&gt;<br />
+&#160;&#160;&#160;&#160;Section 3 content<br />
+&#160;&#160;&lt;/div&gt;<br />
 &lt;/div&gt;<br />
   <p class="theme-note">
     <strong>
@@ -1007,11 +1007,15 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
   </div>
 </div>
 
-</p><!-- 
-Pre-expand include size: 38072 bytes
-Post-expand include size: 64821 bytes
-Template argument size: 35925 bytes
-Maximum: 2097152 bytes
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 2225/1000000
+Preprocessor generated node count: 3805/1000000
+Post-expand include size: 65586/2097152 bytes
+Template argument size: 35788/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key jqdocs_docs:pcache:idhash:3773-1!1!0!!en!2 and timestamp 20120605125030 -->
+<!-- Saved in parser cache with key jqdocs_live:pcache:idhash:3773-1!*!*!*!*!*!* and timestamp 20120929161858 -->
