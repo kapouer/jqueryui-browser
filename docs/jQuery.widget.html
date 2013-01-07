@@ -520,11 +520,19 @@
 <div>The name of the option to get.</div>
 </li></ul>
 </div>
+<div>
+<strong>Code examples:</strong><p>Invoke the  method:</p>
+<div class="syntaxhighlighter nogutter  "><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="keyword">var</code> <code class="plain">isDisabled = $( </code><code class="string">".selector"</code> <code class="plain">).jQuery.Widget( </code><code class="string">"option"</code><code class="plain">, </code><code class="string">"disabled"</code> <code class="plain">);</code></div></div></td></tr></tbody></table></div>
+</div>
 <div class="api-item">
 <h3>option() <span class="returns">Returns: <a class="return" href="http://api.jquery.com/Types/#PlainObject">PlainObject</a></span>
 </h3>
 <div>Gets an object containing key/value pairs representing the current jQuery.Widget options hash.</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
+</div>
+<div>
+<strong>Code examples:</strong><p>Invoke the  method:</p>
+<div class="syntaxhighlighter nogutter  "><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="keyword">var</code> <code class="plain">options = $( </code><code class="string">".selector"</code> <code class="plain">).jQuery.Widget( </code><code class="string">"option"</code> <code class="plain">);</code></div></div></td></tr></tbody></table></div>
 </div>
 <div class="api-item">
 <h3>option( optionName, value )</h3>
@@ -544,6 +552,10 @@
 </li>
 </ul>
 </div>
+<div>
+<strong>Code examples:</strong><p>Invoke the  method:</p>
+<div class="syntaxhighlighter nogutter  "><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="plain">$( </code><code class="string">".selector"</code> <code class="plain">).jQuery.Widget( </code><code class="string">"option"</code><code class="plain">, </code><code class="string">"disabled"</code><code class="plain">, </code><code class="keyword">true</code> <code class="plain">);</code></div></div></td></tr></tbody></table></div>
+</div>
 <div class="api-item">
 <h3>option( options )</h3>
 <div>Sets one or more options for the jQuery.Widget.</div>
@@ -554,6 +566,10 @@
 <div>A map of option-value pairs to set.</div>
 </li></ul>
 </div>
+<div>
+<strong>Code examples:</strong><p>Invoke the  method:</p>
+<div class="syntaxhighlighter nogutter  "><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="plain">$( </code><code class="string">".selector"</code> <code class="plain">).jQuery.Widget( </code><code class="string">"option"</code><code class="plain">, { disabled: </code><code class="keyword">true</code> <code class="plain">} );</code></div></div></td></tr></tbody></table></div>
+</div>
 </div>
 <div id="method-widget"><div class="api-item">
 <h3>widget() <span class="returns">Returns: <a class="return" href="http://api.jquery.com/Types/#jQuery">jQuery</a></span>
@@ -563,7 +579,8 @@
 	</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
 </div></div></section><section id="events"><header><h2 class="underline">Events</h2></header><div id="event-create" class="api-item first-item">
-<h3>create( event, ui )</h3>
+<h3>create( event, ui )<span class="returns">Type: <code>jQuery.Widgetcreate</code></span>
+</h3>
 <div>
 		Triggered when the jQuery.Widget is created.
 	</div>
@@ -581,6 +598,12 @@
 <div></div>
 </li>
 </ul>
+<div>
+<strong>Code examples:</strong><p>Initialize the jQuery.Widget with the create callback specified:</p>
+<div class="syntaxhighlighter nogutter  "><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="plain">$( </code><code class="string">".selector"</code> <code class="plain">).jQuery.Widget({</code></div><div class="line number2 index1 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">create: </code><code class="keyword">function</code><code class="plain">( event, ui ) {}</code></div><div class="line number3 index2 alt2"><code class="plain">});</code></div></div></td></tr></tbody></table></div>
+<p>Bind an event listener to the jQuery.Widgetcreate event:</p>
+<div class="syntaxhighlighter nogutter  "><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="plain">$( </code><code class="string">".selector"</code> <code class="plain">).on( </code><code class="string">"jQuery.Widgetcreate"</code><code class="plain">, </code><code class="keyword">function</code><code class="plain">( event, ui ) {} );</code></div></div></td></tr></tbody></table></div>
+</div>
 </div></section>
 </div></article>
 
