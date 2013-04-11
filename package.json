@@ -5,7 +5,7 @@
 	},
   "name": "jqueryui-browser",
   "description": "jqueryui npm package for browsers",
-  "version": "1.10.0-2",
+  "version": "1.10.2-1",
   "homepage": "http://jqueryui.com/",
   "licenses": [
 		{
@@ -19,8 +19,7 @@
   },
   "directories": {
     "javascripts": "./ui",
-    "stylesheets": "./themes",
-    "doc": "./docs"
+    "stylesheets": "./themes"
   },
   "main": "./index.js",
   "dependencies": {
